@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import exnotaLogo from '../images/exnota.png';
 ---
 
 <html lang="en">
@@ -13,7 +14,10 @@ import '../styles/global.css';
 	<body class="bg-[#0A0B0F] text-white min-h-screen">
 		<nav class="container mx-auto px-4 py-6">
 			<div class="flex justify-between items-center">
-				<div class="text-2xl font-bold">Exnota</div>
+				<div class="flex items-center gap-2">
+					<img src={exnotaLogo.src} alt="Exnota logo" class="w-6 h-6" />
+					<div class="text-2xl font-bold">Exnota</div>
+				</div>
 				<div class="text-gray-400">Notion integrations and tools</div>
 			</div>
 		</nav>
