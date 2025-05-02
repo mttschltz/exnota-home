@@ -1,5 +1,5 @@
 ---
-
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -8,9 +8,33 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Exnota Docs</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-[#0A0B0F] text-white min-h-screen">
+		<nav class="container mx-auto px-4 py-6">
+			<div class="text-2xl font-bold">exnota</div>
+		</nav>
+
+		<main class="container mx-auto px-4">
+			<div class="max-w-3xl mt-20">
+				<h1 class="text-6xl font-bold mb-4">Exnota Docs</h1>
+				<p class="text-2xl text-gray-400 mb-8">Docs in code, synced to Notion.</p>
+				
+				<div class="flex gap-4 max-w-xl">
+					<input 
+						type="email" 
+						placeholder="Enter your email" 
+						class="flex-1 px-4 py-3 rounded-lg bg-[#1C1E24] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500"
+					/>
+					<button class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-medium transition-colors">
+						Get early access
+					</button>
+				</div>
+
+				<div class="mt-6 text-gray-500">
+					ETA: Jun 2025
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
