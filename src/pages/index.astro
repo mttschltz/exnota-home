@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import exnotaLogo from '../images/exnota.png';
+import deleteDuplicates from '../images/delete-duplicates2.png';
 ---
 
 <html lang="en">
@@ -72,13 +73,33 @@ import exnotaLogo from '../images/exnota.png';
 
 			<div class="h-px bg-gray-800 max-w-3xl my-32"></div>
 
-			<div class="max-w-3xl mb-32">
-				<h1 class="text-6xl font-bold mb-4">Exnota Tools</h1>
-				<p class="text-2xl text-gray-400 mb-8">Free Notion tools, including bulk deleting of duplicates.</p>
-				
-				<a href="https://tools.exnota.com" class="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 rounded-lg font-medium transition-colors">
-					Go to Exnota Tools
-				</a>
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-32">
+				<div>
+					<h1 class="text-6xl font-bold mb-4">Exnota Tools</h1>
+					<p class="text-2xl text-gray-400 mb-8">Free Notion tools, including bulk deleting of duplicates.</p>
+					
+					<!-- Mobile-only image -->
+					<div class="relative aspect-video rounded-lg overflow-hidden bg-[#1C1E24] border border-gray-800 mb-8 lg:hidden">
+						<img 
+							src={deleteDuplicates.src} 
+							alt="Exnota Tools Delete Duplicates Feature" 
+							class="w-full h-full object-cover"
+						/>
+					</div>
+
+					<a href="https://tools.exnota.com" class="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 rounded-lg font-medium transition-colors">
+						Go to Exnota Tools
+					</a>
+				</div>
+
+				<!-- Desktop-only image -->
+				<div class="relative aspect-video rounded-lg overflow-hidden bg-[#1C1E24] border border-gray-800 hidden lg:block">
+					<img 
+						src={deleteDuplicates.src} 
+						alt="Exnota Tools Delete Duplicates Feature" 
+						class="w-full h-full object-cover"
+					/>
+				</div>
 			</div>
 		</main>
 
