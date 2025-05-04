@@ -22,3 +22,6 @@ Build the static site with:
 ```bash
 npm run build
 ```
+
+## Deployment
+The site is automatically deployed via GitHub Actions and hosted on GitHub Pages.
